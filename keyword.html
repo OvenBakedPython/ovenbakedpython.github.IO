@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS/keyword.css">
+        <meta charset= "utf-8">
+        <meta name= "viewport" content = "width=device-width, initial-scale=1">
+        <!-- linking bootstrap content-->
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googlapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+$host="myname.database.windows.net";
+$username="theUser";
+$password="password";
+$database="databaseName";
+$tbl_name="tableName";
+
+$mysql = mysql_connect($host, $username, $password)or die("cannot connect"); 
+if (!$mysql) {
+    die('Could not connect: ' . mysql_error());
+}
+mysql_select_db($database);
+$sql='SELECT * FROM $tbl_name';
+$result=mysql_query($sql); 
+
+?>
+
+
+    <title>
+Keyword Search
+    </title>
+</head>
+<body style="background-color: grey; text-align: center font: Times New Roman">
+	<h2>Searching by Keyword Below</h2>
+<form action="/action_page.php" method="post" id= "demo" class="form">
+    Enter Keyword: <input type = "text" name = "Keyword"/>
+    <input type="submit" value="Submit">
+</form>
+<?php
+echo "My first PHP script!";
+?>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+h2{
+    background: grey;
+    text-align: center;   
+}
+
+h4{
+  background: grey;
+  color: blue;
+  text-align: center;
+}
+
+
+html{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: grey;
+  background: url(desk.png)no-repeat center center fixed
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        width: 100%;
+        height: auto; 
+}
+
+
+
+.divider{
+    width:200px;
+    height:auto;
+    display:inline-block;
+    background-color: honeydew;
+}
+
+
+#container{
+  position: relative;
+  top: 30px;
+ 
+}
+
+.button1{
+    background-color: #4caf99; 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-radius: 10%;
+}
+
+.button1:hover {
+    background-color: #ed04f5; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 0.3;
+  }
+.button2{
+    background-color: #4caf99; /* Green */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-radius: 10%;
+}
+
+.button2:hover {
+    background-color: #ed04f5; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 0.3;
+}
+
+
+.button3{
+    background-color: #4caf99; 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-radius: 10%;
+}
+.button3:hover {
+    background-color: #ed04f5; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button3:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 0.3;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+
+  .main-nav{
+    width:100%;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+
+  .nav{
+    dsiplay: flex;
+    justify-content: : space-around;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav li{
+    padding : 5px 10px 10px 10px;
+  }

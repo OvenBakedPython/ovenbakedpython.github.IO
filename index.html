@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document Search
+        </title>
+        <!-- css content-->
+        <link rel="stylesheet" href="CSS/index.css">
+        <meta charset= "utf-8">
+        <meta name= "viewport" content = "width=device-width, initial-scale=1">
+        <!-- linking bootstrap content-->
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googlapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "index.js"></script>
+        </head>
+    <!--Creating headers and body of page-->
+    <body style="background-color: grey">
+        <h1><?php echo "This message is from server side." ?></h1>
+        <h2>
+           Radius Document Search/Download
+        </h2>
+        <h4>
+            Please Choose Your Search Option Below
+        </h4>
+ 
+<!--creating buttons-->
+        <div class = "main-nav" id = "container">
+            <ul class = "nav">
+               
+           
+            <li><a href="keyword.html" target = "_blank"><button type="button" button class="button1" onclick="myFunction()">Keyword Search </button>  </a></li>
+        <input class = "hide" type = "text" id = "textInput" value = ""/>
+        <div class = "divider" ></div>
+        <li><a href="clientname.html" target = "_blank"><button type="button" button class="button2" onclick="myFunctionTwo()">Search By Client </button> </a></li>
+        <div class = "divider"></div>
+        <li><a href="recentlyadded.html" target = "_blank"><button type="button" button class="button3" onclick="myFunctionThree()">Recently Added </button> </a></li>
+    </ul>
+        <div class = "input"></class>
+        </div>
+        
+        <p id= "demo"></p>
+    </body>
+</html>
